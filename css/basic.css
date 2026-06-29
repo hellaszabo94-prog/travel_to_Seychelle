@@ -1,0 +1,261 @@
+		.great-vibes-regular {
+			font-family: "Great Vibes", serif;
+			font-weight: 400;
+			font-style: normal;
+				}
+			
+
+		.roboto-slab-regular {
+			font-family: "Roboto Slab", serif;
+			font-optical-sizing: auto;
+			font-weight: 300;
+			font-style: normal;
+		}
+		* {
+			position: relative;
+			box-sizing: border-box;
+			margin:0;
+			padding:0;
+		}
+		body{
+		
+			font-family: Roboto Slab;
+			font-size: 1em;
+			color:#2c2a27;
+			background-color:rgba(248, 248, 230, 0.432);
+		}
+		main > section {
+			display: block;
+		}
+		
+		/* header, nav - Start*/
+		header{
+			position:sticky;
+			top:0;	
+			z-index:1;
+			height:6em;
+			background-color:white;
+			display:flex;
+		}
+		.headpart1{
+			width:20%;
+		}
+		.headpart2{
+			width:80%;
+		}
+		.logo{
+			height:5em;
+			margin:auto;
+			margin-top: 8px;
+			display: block;
+		}
+		nav {
+			height:6em;
+			line-height:1;
+			background-color:white;
+		}
+		nav button.btnNav {
+			display:none;
+			width:3rem;
+			height:4.5rem;
+			margin:0.5rem auto;
+			border:2px solid white;
+			color:grey;
+			background-color:white;
+			border-radius:0.5rem;
+				
+			background-image:url(../svg/menu.svg);
+			background-repeat:no-repeat;
+			background-position:center;
+			font-size:0;
+				
+			cursor:pointer;
+			}
+		nav li,
+		nav ul {
+			display: block;	
+			
+		}
+		nav ul ul {
+			display: none;
+			position: absolute;
+			width: 100%;
+			height: auto; 
+			z-index: 1; 
+			background-color:white;
+
+		}
+		
+		nav > ul {
+			display:flex;
+			background-color:white;
+		}
+		nav > ul > li {
+			flex-grow:1;
+			flex-shrink:0;
+			text-align:center;
+		}
+		nav a {
+			display:block;
+			width:100%;
+			height:100%;
+			padding:2em;
+			text-decoration:none;
+		}
+		nav a:link{
+			color:#3C3831;
+		}
+		nav a:visited {
+			color:#3C3831;
+		}
+		nav a:hover{
+			color:#14ebf8;
+		}
+		nav li:hover > ul {
+			display: block;
+		}
+		
+		/* header, nav - End*/
+		/* main - Start*/
+		h1{
+			background:linear-gradient(#14ebf8,rgba(248, 248, 230, 0.432));
+			font-family: Great Vibes;
+			font-size: 4em;
+			text-align: center;
+			padding-bottom: 4rem;
+			padding-top: 4rem;
+			margin:auto;
+			word-spacing: 10px;
+		}
+		/* main - End */
+
+		/*footer part - Start*/
+		
+		footer {
+			background-color:white;
+			display:flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			padding-top: 1em;
+			padding-bottom: 1em;
+			
+		}
+		footer > div {
+			height:10em;
+			width:19em;
+			align-content: center;
+			line-height: 1.5;	
+			display: block;
+		}
+		footer a {
+			text-decoration: none;
+		}
+
+		footer a:link {
+			color:#3C3831;
+		}
+
+		footer a:visited {
+			color:#3C3831;
+		}
+
+		footer a:hover {
+			color:#14ebf8;
+		}
+
+		.footerlogo > img {
+			height: 8em;
+			width: 8em;
+		}
+		.footermenu > a {
+			display:flex;
+			justify-content: flex-start;
+			border-left:2px solid #b4b2ad;
+			padding-left:10px;
+		}
+		.footerdata > div {
+			margin: 1em;
+			display: flex;
+			
+		}
+		/*footer part - End*/
+
+		/*RWD - Start*/
+
+		/*midle screen*/
+		@media  (max-width: 1023px) {
+			nav button.btnNav {
+				display:block;
+			}
+			
+			nav > ul {
+				display:none;
+			}
+			nav > ul.visible {
+				display:block;
+			}	
+			nav ul ul {
+				position:relative;
+				display:block;
+				text-align:left;
+			}
+			.headpart1{
+				width:50%;
+			}
+			.headpart2{
+				width:50%;
+			}
+			.footerlogo{
+				width: 100%;
+				margin-bottom: 1em;
+			}
+			.footerdata{
+				width: 100%;
+				margin-bottom: 1em;
+			}
+			.footermenu{
+				width: 100%;
+				margin-bottom: 1em;
+			}
+			.footermenu a {
+				border-left:none;
+				justify-content:center;
+			}
+			.footerdata > div{
+			justify-content: center;
+			}
+		}
+		/*midle screen*/
+
+		/*small screen*/
+
+		@media (max-width: 767px) {
+			
+			h1{
+				font-size: 3rem;
+			}
+			.footerlogo{
+				width: 100%;
+				margin-bottom: 1em;
+			}
+			.footerdata{
+				width: 100%;
+				margin-bottom: 1em;
+			}
+			.footermenu{
+				width: 100%;
+				margin-bottom: 1em;
+			}
+			.footermenu a {
+				border-left:none;
+				justify-content:center;
+			}
+			.footerdata > div{
+			justify-content: center;
+			}
+		}
+		/*small screen*/
+
+		
+
+		/*RWD - End*/

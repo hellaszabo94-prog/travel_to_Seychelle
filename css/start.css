@@ -1,0 +1,131 @@
+
+		/*Conten part 1 - Start*/
+	
+
+		.cont1img{
+			display:flex;
+			width: 33.33;
+		}
+		.cont1img > img {
+			margin:0;
+			padding:5px;
+			width: 33.33%;
+			height:auto;
+			
+			background-color: white;
+			
+		}
+		
+		/*Content part 1 - End*/
+		
+	
+		h2 {
+			font-size:2rem;
+			text-align:center;
+			margin:1em;
+		}
+
+		/*Content part 2 - Start*/
+		.contpart2{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			align-items: center;
+			margin-bottom:3em;
+		}
+		.contimg2 {
+			height:300px;
+			width: 600px;
+			margin: 3em;
+				border: 2px solid #14edf86e;
+            border-radius: 20px;
+            box-shadow:
+                0 0 0 6px rgba(191, 227, 234, 0.35),
+                0 10px 30px rgba(0, 80, 120, 0.10);
+            
+		}
+		.conttext2 {
+			height:300px;
+			width: 600px;
+			margin: 3em;
+			text-align:right;
+			overflow:hidden;
+		}
+		/*Content part 2 - End*/
+		
+		/*Content part 3 - Start*/
+		.contpart3 {
+			display: flex;
+			flex-wrap: wrap-reverse;
+			justify-content: space-evenly;
+			margin-bottom:3em;
+		}
+		.contimg3 {
+			height:300px;
+			width: 600px;
+			margin: 3em;
+			border:4px solid #eee;
+			border-radius: 10px;
+		}
+		.conttext3 {
+			height:300px;
+			width: 600px;
+			margin: 3em;
+			text-align:right;
+			overflow:hidden;
+		}
+		/*Content part 3 - End*/
+		
+		/*Content part 4 - Start*/
+		.contpart4 {
+			background-image: url(../bilder01/bild06.jpg);
+			background-repeat: no-repeat; 
+			background-size:100% 100%;
+			background-position:center;
+		}
+		.conttext4{
+			text-align: center;
+			font-family: Great Vibes;
+			font-size: 4em;
+			color: white;
+
+			padding: 4em 1em;
+			display:block;
+			width:100%;
+			height:100%;
+			text-decoration:none;
+
+			word-spacing: 10px;
+			letter-spacing:4px;
+
+			transition:background-color 0.7s, color 0.3s, text-shadow 0.3s;
+			transition-timing-function: ease-in-out;
+		}
+		.conttext4:hover{
+			background-color: rgba(255, 255, 255, 0.2);
+			color: #00eeff;
+			text-shadow: 2px 2px #1a1816;
+		}
+		/*Content part 4 - End*/
+
+		
+		/*RWD - Start*/
+
+		/*klein screen*/
+
+		@media (max-width: 767px) {
+			
+			.contpart2 > * {
+				max-width: 400px;
+				margin: 2em 0em;
+			 	text-align: center;
+				height: auto;
+			}
+	
+		
+		}
+		/*klein screen*/
+
+		
+
+		/*RWD - End*/

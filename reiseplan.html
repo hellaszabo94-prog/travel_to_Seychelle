@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<title>Seychelle</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+		<link rel="stylesheet" href="./css/basic.css">
+		<link rel="stylesheet" href="./css/reiseplan.css">
+		<style>
+		
+
+		</style>
+		<script>
+			document.addEventListener("DOMContentLoaded",() => {
+				const btn = document.querySelector("nav button.btnNav");
+				btn.addEventListener("click",() => {
+					const navliste = document.querySelector("nav > ul");
+					navliste.classList.toggle("visible");
+				});
+				
+				const navelemente = document.querySelectorAll("nav a");
+				for(let i=0; i<navelemente.length; i++) {
+					navelemente[i].addEventListener("click",() => {
+						const navliste = document.querySelector("nav > ul");
+						navliste.classList.toggle("visible");
+					});
+				}
+			});
+		</script>
+
+	</head>
+	<body>
+		<header>
+			<div class="headpart1">
+				<a href="index.html" target="_self">
+					<img class="logo" src="logo/logo.png" alt="..">
+				</a>
+			</div>
+			<nav class="headpart2" >
+				<button type="button" class="btnNav">Nav ein/aus</button>
+				<ul>
+					<li><a href="index.html" target="_self"><b>Home</b></a></li>
+					<li><a href="dienstleistungen.html" target="_self"><b>Dienstleistungen</b></a></li>	
+					<li><a href="inseln.html" target="_self" ><b>Die Inseln</b></a>
+						<ul>
+							<li><a href="inseln.html#chapter1">Mahe</a></li>
+							<li><a href="inseln.html#chapter2">Praslin</a></li>
+							<li><a href="inseln.html#chapter3">La Digue</a></li>
+						</ul>
+					</li>	
+					<li><a href="reiseplan.html" target="_self"><b>Reiseplan</b></a></li>
+					<li><a href="galerie.html" target="_self"><b>Galerie</b></a></li>
+					<li><a href="kontakt.html" target="_self"><b>Kontakt</b></a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>Reiseplan</h1>
+			<div class="text1">
+				<img src="bilder01/bild12.jpg" alt="">
+				<p>Eine 10-tägige Reise auf die Seychellen bietet die wunderbare Möglichkeit, mehrere Inseln und ihre schönsten Sehenswürdigkeiten kennenzulernen. Die meisten Reisen beginnen auf Mahé, der größten Insel des Archipels, wo man die Hauptstadt Victoria, bunte Märkte, den botanischen Garten und den Morne Seychellois Nationalpark besuchen kann. Außerdem laden auf Mahé traumhafte Strände wie Beau Vallon zum Baden und Entspannen ein. Danach kann die Reise nach Praslin weitergehen, das vor allem für die berühmte Vallée de Mai bekannt ist, ein UNESCO-Weltnaturerbe mit der seltenen Coco-de-Mer-Palme. Auf Praslin sollte man auch wunderschöne Strände wie Anse Lazio oder Anse Georgette besuchen. Ein weiterer Höhepunkt einer Seychellen-Reise ist die Insel La Digue, die für ihre ruhige Atmosphäre und ihre spektakulären Granitfelsen berühmt ist. Dort gehört der Strand Anse Source d’Argent zu den bekanntesten und meistfotografierten Orten der Welt. Auf La Digue kann man die Insel besonders gut mit dem Fahrrad erkunden und dabei kleine Buchten und Naturreservate entdecken. Auch Bootsausflüge zu kleineren Inseln oder Schnorcheltouren zu Korallenriffen sind sehr beliebt. Insgesamt bietet eine 10-tägige Reise auf die Seychellen eine ideale Mischung aus Natur, Erholung, traumhaften Stränden und unvergesslichen Inselerlebnissen.</p>
+			</div>
+			<h2> Reiseplan für 10 Tage</h2>
+			<div class="tabelle">
+				<table>
+					<thead>               
+						<tr>
+							<th scope="col">Tag 1</th>
+							<th scope="col">Tag 2</th>
+							<th scope="col">Tag 3</th>
+							<th scope="col">Tag 4</th>
+							<th scope="col">Tag 5</th>
+							<th scope="col">Tag 6</th>
+							<th scope="col">Tag 7</th>
+							<th scope="col">Tag 8</th>
+							<th scope="col">Tag 9</th>
+							<th scope="col">Tag 10</th>
+						</tr>
+						<tr>
+							<td colspan="3"  scope="col" class="insel"> Praslin</td>
+							<!--<td></td>-->
+							<!--<td></td>-->
+							<!--<td></td>-->
+							<!--<td></td>-->
+							<td colspan="3" scope="col" class="insel"> La Digue</td>
+							<!--<td></td>-->
+							<!--<td></td>-->
+							<!--<td></td>-->
+							<!--<td></td>-->
+							<td colspan="4"  scope="col" class="insel"> Mahe</td>
+							<!--<td></td>-->
+							<!--<td></td>-->
+							<!--<td></td>-->
+							<!--<td></td>-->
+						</td>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Nach der Ankunft auf Mahé kann man sich zunächst im Hotel einrichten und in Ruhe ankommen. Danach bietet sich ein erster Spaziergang am Strand an, zum Beispiel in Beau Vallon, einem der bekanntesten Strände der Insel. So kann man die tropische Atmosphäre der Seychellen sofort genießen.</td>
+							<td>Am zweiten Tag lohnt sich ein Ausflug in die Hauptstadt Victoria. Dort kann man den Markt, den Uhrturm und den botanischen Garten besichtigen. Anschließend kann man eine Rundfahrt über die Insel machen und verschiedene Aussichtspunkte und kleine Buchten entdecken.</td>
+							<td>Dieser Tag eignet sich ideal für einen Besuch im Morne Seychellois Nationalpark. Dort kann man wandern und die üppige tropische Vegetation der Insel kennenlernen. Danach kann man den Nachmittag an einem ruhigen Strand verbringen und sich erholen.</td>
+							<td>Am vierten Tag geht die Reise weiter nach Praslin, entweder mit der Fähre oder mit dem Flugzeug. Nach der Ankunft kann man sich im Hotel entspannen und einen ersten Eindruck von der ruhigen Insel gewinnen. Am Abend bietet sich ein Spaziergang am Meer an.</td>
+							<td>Heute sollte man die berühmte Vallée de Mai besuchen, ein UNESCO-Weltnaturerbe mit der einzigartigen Coco-de-Mer-Palme. Danach kann man einen der schönsten Strände der Insel besuchen, zum Beispiel Anse Lazio. Dort kann man baden, schnorcheln oder einfach die Natur genießen.</td>
+							<td>Dieser Tag steht ganz im Zeichen der Erholung. Man kann an den Stränden entspannen, kleine Orte auf der Insel erkunden oder eine Bootstour unternehmen. Auch Anse Georgette ist ein wunderbarer Ort für einen ruhigen Strandtag.</td>
+							<td>Am siebten Tag fährt man weiter nach La Digue. Die Insel ist bekannt für ihre entspannte Atmosphäre und dafür, dass viele Besucher sie mit dem Fahrrad erkunden. Nach der Ankunft kann man eine kleine Fahrradtour machen und die ersten Eindrücke der Insel sammeln.</td>
+							<td>Heute kann man die schönsten Seiten von La Digue entdecken. Besonders sehenswert ist Anse Source d’Argent, einer der bekanntesten Strände der Welt mit weißem Sand und beeindruckenden Granitfelsen. Auch kleinere Buchten und Naturwege machen den Tag besonders abwechslungsreich.</td>
+							<td>An diesem Tag kann man La Digue noch intensiver erleben. Eine Fahrradtour über die Insel, ein Besuch im Veuve Reserve oder entspannte Stunden am Strand sind ideale Möglichkeiten. So erlebt man die ruhige und natürliche Seite der Seychellen besonders authentisch.</td>
+							<td>Am letzten Tag geht es zurück nach Mahé, von wo aus die Heimreise angetreten wird. Je nach Flugzeit bleibt vielleicht noch etwas Zeit für einen letzten Strandbesuch oder für den Kauf kleiner Souvenirs. Danach endet eine unvergessliche Reise durch die Inselwelt der Seychellen.</td>
+
+						</tr>
+					</tbody>
+				</table>
+			</div>	
+		</main>
+		<footer>
+				<div class="footerlogo">
+					<img class="logo" src="logo/logo.png" alt="..">
+				</div>
+				<div class="footerdata">
+					<div class="phone">
+						<img src="svg/phone.svg" alt="..">
+						<a href="tel:+436764740455">+436761234567</a>
+					</div>
+					<div class="mail">
+						<img src="svg/mail.svg" alt="..">
+						<a href="mailto:muster.mann@gmail.com">muster.mann@gmail.com</a>
+					</div>
+					<div class="address">
+						<img src="svg/location.svg" id="" alt="..">
+						<p>4020 Linz, Kressweg 14.</p> 
+					</div>
+				</div>
+				<div class="footermenu">
+					<a href="index.html" target="_self"><b>Home</b></a>
+					<a href="dienstleistungen.html" target="_self"><b>Dienstleistungen</b></a>
+					<a href="inseln.html" target="_self" ><b>Die Inseln</b></a>
+					<a href="reiseplan.html" target="_self"><b>Reiseplan</b></a>
+					<a href="galerie.html" target="_self"><b>Galerie</b></a>
+					<a href="kontakt.html" target="_self"><b>Kontakt</b></a>
+				</div>
+		</footer>
+	</div>
+	</body>
+</html>

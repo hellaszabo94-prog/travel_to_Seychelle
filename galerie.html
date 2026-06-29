@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<title>Seychelle</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+		<link rel="stylesheet" href="./css/basic.css">
+		<link rel="stylesheet" href="./css/galerie.css">
+		<script>
+			document.addEventListener("DOMContentLoaded",() => {
+				const btn = document.querySelector("nav button.btnNav");
+				btn.addEventListener("click",() => {
+					const navliste = document.querySelector("nav > ul");
+					navliste.classList.toggle("visible");
+				});
+				
+				const navelemente = document.querySelectorAll("nav a");
+				for(let i=0; i<navelemente.length; i++) {
+					navelemente[i].addEventListener("click",() => {
+						const navliste = document.querySelector("nav > ul");
+						navliste.classList.toggle("visible");
+					});
+				}
+			});
+
+	let bilder = [
+  "Galerie/bild01.jpg",
+  "Galerie/bild02.jpg",
+  "Galerie/bild03.jpg",
+  "Galerie/bild04.jpg",
+  "Galerie/bild05.jpg",
+  "Galerie/bild06.jpg",
+  "Galerie/bild07.jpg"
+];
+
+let bildzahler = 0;
+
+document.addEventListener("DOMContentLoaded", () => {
+  let btnFWD = document.querySelector("#btnForward");
+  let btnBCK = document.querySelector("#btnBack");
+  let pic = document.querySelector("#pic0");
+
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  function nextImage() {
+    bildzahler++;
+    if (bildzahler === bilder.length) {
+      bildzahler = 0;
+    }
+    pic.src = bilder[bildzahler];
+  }
+
+  function prevImage() {
+    bildzahler--;
+    if (bildzahler === -1) {
+      bildzahler = bilder.length - 1;
+    }
+    pic.src = bilder[bildzahler];
+  }
+
+  btnFWD.addEventListener("click", nextImage);
+  btnBCK.addEventListener("click", prevImage);
+
+  pic.addEventListener("touchstart", (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  pic.addEventListener("touchend", (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  }, { passive: true });
+
+  function handleSwipe() {
+    const diff = touchStartX - touchEndX;
+
+    if (Math.abs(diff) < 50) return;
+
+    if (diff > 0) {
+      nextImage();
+    } else {
+      prevImage();
+    }
+  }
+});
+		</script>
+
+	</head>
+	<body>
+		<header>
+			<div class="headpart1">
+				<a href="index.html" target="_self">
+					<img class="logo" src="logo/logo.png" alt="..">
+				</a>
+			</div>
+			<nav class="headpart2" >
+				<button type="button" class="btnNav">Nav ein/aus</button>
+				<ul>
+					<li><a href="index.html" target="_self"><b>Home</b></a></li>
+					<li><a href="dienstleistungen.html" target="_self"><b>Dienstleistungen</b></a></li>	
+					<li><a href="inseln.html" target="_self" ><b>Die Inseln</b></a>
+						<ul>
+							<li><a href="inseln.html#chapter1">Mahe</a></li>
+							<li><a href="inseln.html#chapter2">Praslin</a></li>
+							<li><a href="inseln.html#chapter3">La Digue</a></li>
+						</ul>
+					</li>	
+					<li><a href="reiseplan.html" target="_self"><b>Reiseplan</b></a></li>
+					<li><a href="galerie.html" target="_self"><b>Galerie</b></a></li>
+					<li><a href="kontakt.html" target="_self"><b>Kontakt</b></a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>Galerie</h1>
+			<div class="bildergalerie">
+				<button type="button" id="btnBack"><img src="svg/arrow_back.svg"></button>
+				<div class="imgcont">
+					<img src="Galerie/bild01.jpg" id="pic0" alt="..">
+				</div>
+				<button type="button" id="btnForward"><img src="svg/arrow_forward.svg"></button>
+			</div>
+		</main>
+		<footer>
+				<div class="footerlogo">
+					<img class="logo" src="logo/logo.png" alt="..">
+				</div>
+				<div class="footerdata">
+					<div class="phone">
+						<img src="svg/phone.svg" alt="..">
+						<a href="tel:+436764740455">+436761234567</a>
+					</div>
+					<div class="mail">
+						<img src="svg/mail.svg" alt="..">
+						<a href="mailto:muster.mann@gmail.com">muster.mann@gmail.com</a>
+					</div>
+					<div class="address">
+						<img src="svg/location.svg" id="" alt="..">
+						<p>4020 Linz, Kressweg 14.</p> 
+					</div>
+				</div>
+				<div class="footermenu">
+					<a href="index.html" target="_self"><b>Home</b></a>
+					<a href="dienstleistungen.html" target="_self"><b>Dienstleistungen</b></a>
+					<a href="inseln.html" target="_self" ><b>Die Inseln</b></a>
+					<a href="reiseplan.html" target="_self"><b>Reiseplan</b></a>
+					<a href="galerie.html" target="_self"><b>Galerie</b></a>
+					<a href="kontakt.html" target="_self"><b>Kontakt</b></a>
+				</div>
+		</footer>
+	</div>
+	</body>
+</html>
