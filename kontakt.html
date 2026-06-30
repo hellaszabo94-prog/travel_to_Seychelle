@@ -10,34 +10,13 @@
 		<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
 		<link rel="stylesheet" href="./css/basic.css">
 		<link rel="stylesheet" href="./css/kontakt.css">
-
-		<style>
-
-
-		</style>
-		<script>
-			document.addEventListener("DOMContentLoaded",() => {
-				const btn = document.querySelector("nav button.btnNav");
-				btn.addEventListener("click",() => {
-					const navliste = document.querySelector("nav > ul");
-					navliste.classList.toggle("visible");
-				});
-				
-				const navelemente = document.querySelectorAll("nav a");
-				for(let i=0; i<navelemente.length; i++) {
-					navelemente[i].addEventListener("click",() => {
-						const navliste = document.querySelector("nav > ul");
-						navliste.classList.toggle("visible");
-					});
-				}
-			});
-		</script>
+		<script src="js/navigation.js" defer></script>
 	</head>
 	<body>
 		<header>
 			<div class="headpart1">
 				<a href="index.html" target="_self">
-					<img class="logo" src="logo/logo.png" alt="..">
+					<img class="logo" src="logo/logo.png" alt="Travel to Seychelles Logo">
 				</a>
 			</div>
 			<nav class="headpart2" >
@@ -62,67 +41,64 @@
 			<h1>Kontakt</h1>
 			<p class="text1"><b>Hast du noch Fragen oder möchtest du dich schon für unsere Reisen anmelden?<br> Dann nimm über das folgende Formular Kontakt mit uns auf!!</b></p>
 			<div class="flex">
-			<img class="contimg" src="bilder01/bild05.jpg" alt=".." >
-			
-			<form>
-				<fieldset>
-					<div>
-					<label>
-						Vorname:<br>
-						<input class="box1" type="text" name="Vorname">
-					</label>
-					<label>
-						Nachname:<br>
-					<input class="box1" type="text" name="Nachname">
-					</label>
-					</label>
-					<label>
-						Geburtsdatum:<br>
-						<input class="box1" type="date" name="GebDatum">
-					</label>
-					<label>
-						Emailadresse:<br>
-						<input class="box1" type="email" name="Emailadresse" required>
-					</label>
-					<label class="geschl"> Geschlecht:<br>
-					<label>
-						<input type="radio" name="Geschlecht" value="weiblich" checked>
-						weiblich
-					</label>
-					<label>
-						<input type="radio" name="Geschlecht" value="männlich">
-						männlich
-					</label>
-					<label>
-						<input type="radio" name="Geschlecht" value="divers">
-						divers
-					</label>
-					</label>
+				<img class="contimg" src="bilder01/bild05.jpg">
+				<form>
+					<fieldset>
 						<label>
-						Nachricht an uns:<br>
-						<textarea name="Nachricht"></textarea>
-					<label>
-					<input class="button1" type="submit" value="Senden!">
-				</div>
-				</fieldset>
-			</form>
+							Vorname:<br>
+							<input class="box1" type="text" name="Vorname">
+						</label>
+						<label>
+							Nachname:<br>
+						<input class="box1" type="text" name="Nachname">
+						</label>
+						<label>
+							Geburtsdatum:<br>
+							<input class="box1" type="date" name="GebDatum">
+						</label>
+						<label>
+							Emailadresse:<br>
+							<input class="box1" type="email" name="Emailadresse" required>
+						</label>
+						<label class="geschl"> Geschlecht:<br></label>
+						<label>
+							<input type="radio" name="Geschlecht" value="weiblich" checked>
+							weiblich
+						</label>
+						<label>
+							<input type="radio" name="Geschlecht" value="männlich">
+							männlich
+						</label>
+						<label>
+							<input type="radio" name="Geschlecht" value="divers">
+							divers
+						</label>
+						<label>
+							Nachricht an uns:<br>
+							<textarea name="Nachricht"></textarea>
+						</label>
+						<label>
+							<input class="button1" type="submit" value="Senden!">
+						</label>
+					</fieldset>
+				</form>
 			</div>
 		</main>
 		<footer>
 				<div class="footerlogo">
-					<img class="logo" src="logo/logo.png" alt="..">
+					<img class="logo" src="logo/logo.png" alt="Travel to Seychelles Logo">
 				</div>
 				<div class="footerdata">
 					<div class="phone">
-						<img src="svg/phone.svg" alt="..">
-						<a href="tel:+436764740455">+436761234567</a>
+						<img src="svg/phone.svg">
+						<a href="tel:+436761234567">+436761234567</a>
 					</div>
 					<div class="mail">
-						<img src="svg/mail.svg" alt="..">
+						<img src="svg/mail.svg">
 						<a href="mailto:muster.mann@gmail.com">muster.mann@gmail.com</a>
 					</div>
 					<div class="address">
-						<img src="svg/location.svg" id="" alt="..">
+						<img src="svg/location.svg">
 						<p>4020 Linz, Kressweg 14.</p> 
 					</div>
 				</div>

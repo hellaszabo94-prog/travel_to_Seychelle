@@ -9,32 +9,15 @@
 		<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 		<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
 		<link rel="stylesheet" href="./css/basic.css">
-		<link rel="stylesheet" href="./css/deinstleistungen.css">
+		<link rel="stylesheet" href="./css/dienstleistungen.css">
 		<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
-
-		<script>
-			document.addEventListener("DOMContentLoaded",() => {
-				const btn = document.querySelector("nav button.btnNav");
-				btn.addEventListener("click",() => {
-					const navliste = document.querySelector("nav > ul");
-					navliste.classList.toggle("visible");
-				});
-				
-				const navelemente = document.querySelectorAll("nav a");
-				for(let i=0; i<navelemente.length; i++) {
-					navelemente[i].addEventListener("click",() => {
-						const navliste = document.querySelector("nav > ul");
-						navliste.classList.toggle("visible");
-					});
-				}
-			});
-		</script>
+		<script src="js/navigation.js" defer></script>
 	</head>
 	<body>
 		<header>
 			<div class="headpart1">
 				<a href="index.html" target="_self">
-					<img class="logo" src="logo/logo.png" alt="..">
+					<img class="logo" src="logo/logo.png" alt="Travel to Seychelles Logo">
 				</a>
 			</div>
 			<nav class="headpart2" >
@@ -98,19 +81,19 @@
 		</main>
 		<footer>
 				<div class="footerlogo">
-					<img class="logo" src="logo/logo.png" alt="..">
+					<img class="logo" src="logo/logo.png" alt="Travel to Seychelles Logo">
 				</div>
 				<div class="footerdata">
 					<div class="phone">
-						<img src="svg/phone.svg" alt="..">
+						<img src="svg/phone.svg">
 						<a href="tel:+436764740455">+436761234567</a>
 					</div>
 					<div class="mail">
-						<img src="svg/mail.svg" alt="..">
+						<img src="svg/mail.svg">
 						<a href="mailto:muster.mann@gmail.com">muster.mann@gmail.com</a>
 					</div>
 					<div class="address">
-						<img src="svg/location.svg" id="" alt="..">
+						<img src="svg/location.svg">
 						<p>4020 Linz, Kressweg 14.</p> 
 					</div>
 				</div>

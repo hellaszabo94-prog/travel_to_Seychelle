@@ -10,34 +10,13 @@
 		<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
 		<link rel="stylesheet" href="./css/basic.css">
 		<link rel="stylesheet" href="./css/reiseplan.css">
-		<style>
-		
-
-		</style>
-		<script>
-			document.addEventListener("DOMContentLoaded",() => {
-				const btn = document.querySelector("nav button.btnNav");
-				btn.addEventListener("click",() => {
-					const navliste = document.querySelector("nav > ul");
-					navliste.classList.toggle("visible");
-				});
-				
-				const navelemente = document.querySelectorAll("nav a");
-				for(let i=0; i<navelemente.length; i++) {
-					navelemente[i].addEventListener("click",() => {
-						const navliste = document.querySelector("nav > ul");
-						navliste.classList.toggle("visible");
-					});
-				}
-			});
-		</script>
-
+		<script src="js/navigation.js" defer></script>
 	</head>
 	<body>
 		<header>
 			<div class="headpart1">
 				<a href="index.html" target="_self">
-					<img class="logo" src="logo/logo.png" alt="..">
+					<img class="logo" src="logo/logo.png" alt="Travel to Seychelles Logo">
 				</a>
 			</div>
 			<nav class="headpart2" >
@@ -61,7 +40,7 @@
 		<main>
 			<h1>Reiseplan</h1>
 			<div class="text1">
-				<img src="bilder01/bild12.jpg" alt="">
+				<img src="bilder01/bild12.jpg">
 				<p>Eine 10-tägige Reise auf die Seychellen bietet die wunderbare Möglichkeit, mehrere Inseln und ihre schönsten Sehenswürdigkeiten kennenzulernen. Die meisten Reisen beginnen auf Mahé, der größten Insel des Archipels, wo man die Hauptstadt Victoria, bunte Märkte, den botanischen Garten und den Morne Seychellois Nationalpark besuchen kann. Außerdem laden auf Mahé traumhafte Strände wie Beau Vallon zum Baden und Entspannen ein. Danach kann die Reise nach Praslin weitergehen, das vor allem für die berühmte Vallée de Mai bekannt ist, ein UNESCO-Weltnaturerbe mit der seltenen Coco-de-Mer-Palme. Auf Praslin sollte man auch wunderschöne Strände wie Anse Lazio oder Anse Georgette besuchen. Ein weiterer Höhepunkt einer Seychellen-Reise ist die Insel La Digue, die für ihre ruhige Atmosphäre und ihre spektakulären Granitfelsen berühmt ist. Dort gehört der Strand Anse Source d’Argent zu den bekanntesten und meistfotografierten Orten der Welt. Auf La Digue kann man die Insel besonders gut mit dem Fahrrad erkunden und dabei kleine Buchten und Naturreservate entdecken. Auch Bootsausflüge zu kleineren Inseln oder Schnorcheltouren zu Korallenriffen sind sehr beliebt. Insgesamt bietet eine 10-tägige Reise auf die Seychellen eine ideale Mischung aus Natur, Erholung, traumhaften Stränden und unvergesslichen Inselerlebnissen.</p>
 			</div>
 			<h2> Reiseplan für 10 Tage</h2>
@@ -118,19 +97,19 @@
 		</main>
 		<footer>
 				<div class="footerlogo">
-					<img class="logo" src="logo/logo.png" alt="..">
+					<img class="logo" src="logo/logo.png" alt="Travel to Seychelles Logo">
 				</div>
 				<div class="footerdata">
 					<div class="phone">
-						<img src="svg/phone.svg" alt="..">
-						<a href="tel:+436764740455">+436761234567</a>
+						<img src="svg/phone.svg">
+						<a href="tel:+436761234567">+436761234567</a>
 					</div>
 					<div class="mail">
-						<img src="svg/mail.svg" alt="..">
+						<img src="svg/mail.svg">
 						<a href="mailto:muster.mann@gmail.com">muster.mann@gmail.com</a>
 					</div>
 					<div class="address">
-						<img src="svg/location.svg" id="" alt="..">
+						<img src="svg/location.svg">
 						<p>4020 Linz, Kressweg 14.</p> 
 					</div>
 				</div>

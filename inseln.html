@@ -10,30 +10,13 @@
 		<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
 		<link rel="stylesheet" href="./css/basic.css">
 		<link rel="stylesheet" href="./css/inseln.css">
-		<script>
-			document.addEventListener("DOMContentLoaded",() => {
-				const btn = document.querySelector("nav button.btnNav");
-				btn.addEventListener("click",() => {
-					const navliste = document.querySelector("nav > ul");
-					navliste.classList.toggle("visible");
-				});
-				
-				const navelemente = document.querySelectorAll("nav a");
-				for(let i=0; i<navelemente.length; i++) {
-					navelemente[i].addEventListener("click",() => {
-						const navliste = document.querySelector("nav > ul");
-						navliste.classList.toggle("visible");
-					});
-				}
-			});
-		</script>
-
+		<script src="js/navigation.js" defer></script>
 	</head>
 	<body>
 		<header>
 			<div class="headpart1">
 				<a href="index.html" target="_self">
-					<img class="logo" src="logo/logo.png" alt="..">
+					<img class="logo" src="logo/logo.png" alt="Travel to Seychelles Logo">
 				</a>
 			</div>
 			<nav class="headpart2" >
@@ -59,7 +42,7 @@
 			<div class="unterseite2menu">
 				<div class="polaroid">
 					<a class="bookmark" href="#chapter1">
-						<img class="polaroidimg" src="bilder01/bild11.jpg" alt="">
+						<img class="polaroidimg" src="bilder01/bild11.jpg">
 						<div class="text">
 							<p><b>Mahe</b></p>
 						</div>
@@ -67,7 +50,7 @@
 				</div>
 				<div class="polaroid">
 					<a class="bookmark" href="#chapter2">
-					<img class="polaroidimg" src="bilder01/bild10.jpg" alt="">
+					<img class="polaroidimg" src="bilder01/bild10.jpg">
 					<div class="text">
 						<p><b>Praslin</b></p>
 					</div>
@@ -75,7 +58,7 @@
 				</div>
 				<div class="polaroid">
 					<a class="bookmark" href="#chapter3">
-					<img class="polaroidimg" src="bilder01/bild09.jpg" alt="">
+					<img class="polaroidimg" src="bilder01/bild09.jpg">
 					<div class="text">
 						<p><b>La Digue</b></p>
 					</div>
@@ -85,17 +68,17 @@
 			<div clas="maincontent">
 				<h2 id="chapter1">Mahe</h2>
 				<div class="mahe">
-					<img src="bilder01/bild11.jpg" alt="">
+					<img src="bilder01/bild11.jpg">
 					<p>Mahé ist die größte und am dichtesten besiedelte Insel der Seychellen und gilt als das wirtschaftliche und kulturelle Zentrum des Inselstaates. Die Hauptstadt Victoria liegt auf Mahé und ist zugleich die wichtigste Stadt des Landes. Die Insel befindet sich im westlichen Indischen Ozean und ist für ihre Mischung aus tropischer Natur, Bergen und traumhaften Stränden bekannt. Mahé ist granitischen Ursprungs und deutlich bergiger als viele andere Inseln im Indischen Ozean. Der höchste Punkt ist der Morne Seychellois mit 905 Metern, der Teil des gleichnamigen Nationalparks ist. Auf Mahé gibt es zahlreiche Strände, üppige Regenwälder und eine große Vielfalt an tropischen Pflanzen und Tieren. Besonders beliebt ist die Insel bei Reisenden, die Badeurlaub mit Wanderungen und Naturerlebnissen verbinden möchten. Auch kulturell ist Mahé interessant, weil sich hier kreolische, afrikanische, europäische und asiatische Einflüsse begegnen. Durch den internationalen Flughafen ist Mahé das wichtigste Eingangstor für Besucher der Seychellen. Insgesamt ist die Insel ein idealer Ort für alle, die Erholung, Natur und ein authentisches Inselgefühl suchen.</p>
 				</div>
 				<h2 id="chapter2">Praslin</h2>
 				<div class="praslin">
-					<img src="bilder01/bild10.jpg" alt="">
+					<img src="bilder01/bild10.jpg">
 					<p>Praslin ist die zweitgrößte Insel der Seychellen und liegt etwa 45 Kilometer nordöstlich von Mahé. Die Insel ist vor allem für ihre ruhige Atmosphäre, ihre traumhaften Strände und ihre beeindruckende Natur bekannt. Praslin ist kleiner und oft entspannter als Mahé, weshalb sie bei vielen Urlaubern sehr beliebt ist. Besonders berühmt ist die Vallée de Mai, ein UNESCO-Weltnaturerbe auf Praslin. Dort wächst die seltene Coco-de-Mer-Palme, die den größten Samen im Pflanzenreich hervorbringt. Die Insel besitzt außerdem eine üppige tropische Vegetation und ist Lebensraum für verschiedene endemische Tier- und Pflanzenarten. Zu den bekanntesten Stränden gehören Anse Lazio und Anse Georgette, die oft zu den schönsten Stränden der Welt gezählt werden. Praslin eignet sich besonders gut für Reisende, die Erholung, Natur und wunderschöne Badeplätze suchen. Die Insel ist von Mahé aus mit dem Flugzeug oder der Fähre gut erreichbar. Insgesamt ist Praslin ein ideales Reiseziel für alle, die die Seychellen von ihrer ruhigen und natürlichen Seite erleben möchten.</p>
 				</div>
 				<h2 id="chapter3">La Digue</h2>
 				<div class="ladigue">
-					<img src="bilder01/bild09.jpg" alt="">
+					<img src="bilder01/bild09.jpg">
 					<p>La Digue ist eine der bekanntesten Inseln der Seychellen und liegt etwa 40 Kilometer von Mahé sowie nur wenige Kilometer von Praslin entfernt.
 					Sie gehört zu den größeren bewohnten Inseln des Archipels und ist besonders für ihre ruhige, entspannte Atmosphäre bekannt.
 					Viele Besucher schätzen La Digue, weil das Leben dort langsamer und traditioneller wirkt als auf Mahé.
@@ -111,19 +94,19 @@
 		</main>
 		<footer>
 				<div class="footerlogo">
-					<img class="logo" src="logo/logo.png" alt="..">
+					<img class="logo" src="logo/logo.png" alt="Travel to Seychelles Logo">
 				</div>
 				<div class="footerdata">
 					<div class="phone">
-						<img src="svg/phone.svg" alt="..">
-						<a href="tel:+436764740455">+436761234567</a>
+						<img src="svg/phone.svg">
+						<a href="tel:+436761234567">+436761234567</a>
 					</div>
 					<div class="mail">
-						<img src="svg/mail.svg" alt="..">
+						<img src="svg/mail.svg">
 						<a href="mailto:muster.mann@gmail.com">muster.mann@gmail.com</a>
 					</div>
 					<div class="address">
-						<img src="svg/location.svg" id="" alt="..">
+						<img src="svg/location.svg">
 						<p>4020 Linz, Kressweg 14.</p> 
 					</div>
 				</div>

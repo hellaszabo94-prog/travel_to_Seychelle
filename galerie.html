@@ -10,91 +10,14 @@
 		<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
 		<link rel="stylesheet" href="./css/basic.css">
 		<link rel="stylesheet" href="./css/galerie.css">
-		<script>
-			document.addEventListener("DOMContentLoaded",() => {
-				const btn = document.querySelector("nav button.btnNav");
-				btn.addEventListener("click",() => {
-					const navliste = document.querySelector("nav > ul");
-					navliste.classList.toggle("visible");
-				});
-				
-				const navelemente = document.querySelectorAll("nav a");
-				for(let i=0; i<navelemente.length; i++) {
-					navelemente[i].addEventListener("click",() => {
-						const navliste = document.querySelector("nav > ul");
-						navliste.classList.toggle("visible");
-					});
-				}
-			});
-
-	let bilder = [
-  "galerie/bild01.jpg",
-  "galerie/bild02.jpg",
-  "galerie/bild03.jpg",
-  "galerie/bild04.jpg",
-  "galerie/bild05.jpg",
-  "galerie/bild06.jpg",
-  "galerie/bild07.jpg"
-];
-
-let bildzahler = 0;
-
-document.addEventListener("DOMContentLoaded", () => {
-  let btnFWD = document.querySelector("#btnForward");
-  let btnBCK = document.querySelector("#btnBack");
-  let pic = document.querySelector("#pic0");
-
-  let touchStartX = 0;
-  let touchEndX = 0;
-
-  function nextImage() {
-    bildzahler++;
-    if (bildzahler === bilder.length) {
-      bildzahler = 0;
-    }
-    pic.src = bilder[bildzahler];
-  }
-
-  function prevImage() {
-    bildzahler--;
-    if (bildzahler === -1) {
-      bildzahler = bilder.length - 1;
-    }
-    pic.src = bilder[bildzahler];
-  }
-
-  btnFWD.addEventListener("click", nextImage);
-  btnBCK.addEventListener("click", prevImage);
-
-  pic.addEventListener("touchstart", (e) => {
-    touchStartX = e.changedTouches[0].screenX;
-  }, { passive: true });
-
-  pic.addEventListener("touchend", (e) => {
-    touchEndX = e.changedTouches[0].screenX;
-    handleSwipe();
-  }, { passive: true });
-
-  function handleSwipe() {
-    const diff = touchStartX - touchEndX;
-
-    if (Math.abs(diff) < 50) return;
-
-    if (diff > 0) {
-      nextImage();
-    } else {
-      prevImage();
-    }
-  }
-});
-		</script>
-
+		<script src="js/navigation.js" defer></script>
+		<script src="js/galerie.js" defer></script>
 	</head>
 	<body>
 		<header>
 			<div class="headpart1">
 				<a href="index.html" target="_self">
-					<img class="logo" src="logo/logo.png" alt="..">
+					<img class="logo" src="logo/logo.png" alt="Travel to Seychelles Logo">
 				</a>
 			</div>
 			<nav class="headpart2" >
@@ -120,26 +43,26 @@ document.addEventListener("DOMContentLoaded", () => {
 			<div class="bildergalerie">
 				<button type="button" id="btnBack"><img src="svg/arrow_back.svg"></button>
 				<div class="imgcont">
-					<img src="galerie/bild01.jpg" id="pic0" alt="..">
+					<img src="galerie/bild01.jpg" id="pic0">
 				</div>
 				<button type="button" id="btnForward"><img src="svg/arrow_forward.svg"></button>
 			</div>
 		</main>
 		<footer>
 				<div class="footerlogo">
-					<img class="logo" src="logo/logo.png" alt="..">
+					<img class="logo" src="logo/logo.png" alt="Travel to Seychelles Logo">
 				</div>
 				<div class="footerdata">
 					<div class="phone">
-						<img src="svg/phone.svg" alt="..">
+						<img src="svg/phone.svg">
 						<a href="tel:+436764740455">+436761234567</a>
 					</div>
 					<div class="mail">
-						<img src="svg/mail.svg" alt="..">
+						<img src="svg/mail.svg">
 						<a href="mailto:muster.mann@gmail.com">muster.mann@gmail.com</a>
 					</div>
 					<div class="address">
-						<img src="svg/location.svg" id="" alt="..">
+						<img src="svg/location.svg">
 						<p>4020 Linz, Kressweg 14.</p> 
 					</div>
 				</div>
