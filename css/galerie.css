@@ -22,6 +22,7 @@
 			z-index: 5;
 			border:none;
 			background-color:transparent;
+			cursor: pointer;
 			
 		}
 		#btnBack>img{
@@ -37,6 +38,7 @@
 			z-index: 5;
 			border:none;
 			background-color: transparent;
+			cursor: pointer;
 		}
 		#btnForward>img{
 			width: 5em;
